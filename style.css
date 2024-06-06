@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+/*Browser predefined values reset*/
+body, p, h1, h2, h3, h4, h5, h6, ul, li, div, span {
+    font-family: 'Salsa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-right: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content img {
+    border: 15px dotted rgb(212, 123, 6);
+    margin-left: 20px;
+}
+
+.projects-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/*Check responsive code
+@media only screen and (max-width: 575px) {
+    .projects-content {
+        flex-direction: column;
+    }
+    .projects-content div {
+        width: 100%;
+    }
+}
+*/
+.projects-content div {
+    max-width: 33.33%;
+}
+
+.projects-content div img {
+    max-width: 100%;
+}
