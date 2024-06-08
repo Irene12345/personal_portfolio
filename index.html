@@ -6,52 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My personal portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fab.icons.css">
+    <script src="https://kit.fontawesome.com/a819401877.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <header>
     <h1>Irene YG</h1>
-    <nav>
-        <ul>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="">About me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
             <h2>About me</h2>
-            <p>Paragraph</p>
-            <img src="" alt="about me image">
+            <div class="about-content">
+                <div>
+                    <p>Hello!</p>
+                    <p>I'm Irene, an aspiring web developer passionate about creating visually appealing and user-friendly websites. Currently diving deep into the world of web development, I am dedicated to mastering the art and science behind crafting seamless digital experiences.</p>
+                    <p>My journey into web development began with a fascination for the internet and how websites worked. This curiosity led me to explore HTML, CSS, and JavaScript, and it wasn't long before I was hooked. Each line of code written and every new concept learned fuels my passion for this ever-evolving field.</p>
+                </div>
+                <img src="media/cat.jpg" alt="about me image">
+            </div>
         </section>
         <section>
             <h2>Projects</h2>
-            <div>
+            <div class="projects-content">
                 <div>
-                    <h3>Project 1</h3>
-                    <img src="" alt="">
-                    <p>Text</p>
+                    <h3>Project 1</h3>                    
+                    <p>Brief description of project 1, technologies used, and what I have learned.</p>
+                    <img src="media/project1.jpg" alt="Project1">
                 </div>
                 <div>
                     <h3>Project 2</h3>
-                    <img src="" alt="">
-                    <p>Text</p>
+                    <p>Brief description of project 2, technologies used, and what I have learned.</p>
+                    <img src="media/project2.jpg" alt="Project2">
                 </div>
                 <div>
-                    <h3>Project 2</h3>
-                    <img src="" alt="">
-                    <p>Text</p>
+                    <h3>Project 3</h3>
+                    <p>Brief description of project 3, technologies used, and what I have learned.</p>
+                    <img src="media/project3.jpg" alt="Project3">
                 </div>
             </div>
         </section>
         <section>
             <h2>Skills</h2>
-            <div>
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
-            </div>
+            <div id="skills-container">
+                <i class="fab fa-html5" title="html5"></i>
+                <i class="fab fa-css3-alt" title="css3"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <i class="fab fa-figma" title="Figma"></i>
+                <i class="fab fa-git" title="git"></i>
+                <i class="fab fa-github" title="github"></i>
+              </div>
         </section>
     </main>
     <footer>

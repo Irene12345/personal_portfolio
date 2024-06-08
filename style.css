@@ -14,11 +14,16 @@ body {
     font-size: 16px;
 }
 
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 p {
     margin-bottom: 1em;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin-bottom: 1em;
 }
 
@@ -76,4 +81,17 @@ h1 {
 
 .projects-content div img {
     max-width: 100%;
+}
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: .25em;
 }
