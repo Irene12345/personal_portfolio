@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 /*Browser predefined values reset*/
 body, p, h1, h2, h3, h4, h5, h6, ul, li, div, span {
-    font-family: 'Salsa', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -12,18 +12,23 @@ body {
     margin: 0 auto;
     padding: 30px;
     font-size: 16px;
+    color: #323232;
 }
 
-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 1em;
+h1, h2, h3, h4, h5, h6, ul, li {
+    font-family: 'Kanit', sans-serif;
 }
 
 h1, h2, h3 {
+    margin-bottom: .5em;
+}
+
+section {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+p {
     margin-bottom: 1em;
 }
 
@@ -39,6 +44,7 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
+    font-size: 18px;
 }
 
 nav ul li a {
@@ -83,15 +89,19 @@ h1 {
     max-width: 100%;
 }
 
-#skills-container {
+#skills-container, #contact-container {
     display: flex;
     width: 100%;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-#skills-container > * {
+#skills-container > *, #contact-container > * {
     font-size: 2em;
     width: 2em;
     margin-top: .25em;
+}
+
+#contact-container a {
+    color: #323232
 }
