@@ -37,22 +37,32 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 nav ul {
     display: inline-flex;
     list-style-type: none;
 }
 
 nav ul li {
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 18px;
+}
+
+nav ul li:last-child {
+    margin-right: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
+    font-weight: 700;
 }
 
-h1 {
-    margin-right: 20px;
+nav ul li a:visited {
+    color: #323232;
+}
+
+nav ul li a:hover {
+    color: rgb(212, 123, 6);
 }
 
 .about-content {
@@ -71,22 +81,16 @@ h1 {
     gap: 20px;
 }
 
-/*Check responsive code
-@media only screen and (max-width: 575px) {
-    .projects-content {
-        flex-direction: column;
-    }
-    .projects-content div {
-        width: 100%;
-    }
-}
-*/
 .projects-content div {
     max-width: 33.33%;
 }
 
 .projects-content div img {
     max-width: 100%;
+}
+
+.projects-content h3 {
+    color: rgb(212, 123, 6);
 }
 
 #skills-container, #contact-container {
@@ -104,4 +108,34 @@ h1 {
 
 #contact-container a {
     color: #323232
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 776px) {
+    header, .about-content, .projects-content  {
+        flex-direction: column;
+    }
+
+    .projects-content div {
+        max-width: 100%;
+    }
+
+    .projects-content img {
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0px;
+    }
+
+    .about-content img {
+        border: 8px dotted rgb(212, 123, 6);
+        margin-left: 0px;
+    }
+    
 }
