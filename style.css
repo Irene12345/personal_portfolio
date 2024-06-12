@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 /*Browser predefined values reset*/
-body, p, h1, h2, h3, h4, h5, h6, ul, li, div, span {
+body, p, h1, h2, h3, h4, h5, h6, ul, li, div, span, figure {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -70,9 +70,27 @@ nav ul li a:hover {
     justify-content: space-between;
 }
 
-.about-content img {
+.about-content .about-image {
+    position: relative;
+}
+
+#cat {
     border: 15px dotted rgb(212, 123, 6);
     margin-left: 20px;
+}
+
+#meaow {
+    position:absolute;
+    bottom: 65px;
+    right: 290px;
+    visibility: hidden;
+}
+
+.about-content figcaption {
+    font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: large;
 }
 
 .projects-content {
@@ -116,14 +134,6 @@ nav ul li a:hover {
         flex-direction: column;
     }
 
-    .projects-content div {
-        max-width: 100%;
-    }
-
-    .projects-content img {
-        width: 100%;
-    }
-
     nav ul li {
         margin-right: 15px;
         font-size: 16px;
@@ -133,9 +143,24 @@ nav ul li a:hover {
         margin-right: 0px;
     }
 
-    .about-content img {
+    #cat {
         border: 8px dotted rgb(212, 123, 6);
         margin-left: 0px;
+        width: 100%;
+    }
+
+    #meaow {
+        bottom: 65px;
+        left: 15%;
+        max-width: 40%;
+    }
+    
+    .projects-content div {
+        max-width: 100%;
+    }
+
+    .projects-content img {
+        width: 100%;
     }
     
 }
