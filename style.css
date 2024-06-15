@@ -111,6 +111,22 @@ nav ul li a:hover {
     color: rgb(212, 123, 6);
 }
 
+.projects-content div a {
+    text-decoration: none;
+}
+
+.projects-content div a h3:hover {
+    color: rgb(212, 123, 6, .75);
+}
+
+.projects-content img {
+    transition: transform 1.5s ease;
+}
+
+.projects-content img:hover {
+    transform: rotate(360deg);
+}
+
 #skills-container, #contact-container {
     display: flex;
     width: 100%;

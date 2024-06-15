@@ -5,6 +5,11 @@ function showMeaow() {
     meaowing.style.visibility = 'visible';
 }
 
-catpic.addEventListener('click', showMeaow);
+function hideMeaow() {
+    meaowing.style.visibility = 'hidden';
+}
+
+catpic.addEventListener('mousedown', showMeaow);
 
 
+catpic.addEventListener('mouseup', hideMeaow);
