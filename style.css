@@ -55,6 +55,7 @@ nav ul li:last-child {
 nav ul li a {
     text-decoration: none;
     font-weight: 700;
+    color: #323232;
 }
 
 nav ul li a:visited {
